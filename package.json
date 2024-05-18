@@ -1,17 +1,17 @@
 {
-  "name": "-template-",
+  "name": "keyweaver",
   "version": "1.0.0",
-  "description": "",
-  "author": "Krombik",
+  "description": "Generate unique string keys from nested data structures",
+  "author": "Andrii Dubetskyi",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Krombik/-template-.git"
+    "url": "git+https://github.com/Krombik/keyweaver.git"
   },
   "bugs": {
-    "url": "https://github.com/Krombik/-template-/issues"
+    "url": "https://github.com/Krombik/keyweaver/issues"
   },
-  "homepage": "https://github.com/Krombik/-template-#readme",
+  "homepage": "https://github.com/Krombik/keyweaver#readme",
   "type": "module",
   "source": "src/index.ts",
   "engines": {
@@ -30,6 +30,11 @@
     "typescript": "^5.4.5"
   },
   "keywords": [
+    "key",
+    "unique",
+    "nested",
+    "object",
+    "generator"
   ],
   "sideEffects": false
 }
