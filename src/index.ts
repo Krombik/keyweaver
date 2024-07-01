@@ -4,7 +4,7 @@ type NestedObject = {
   [key: string | number]: PrimitiveOrNested;
 };
 
-type PrimitiveOrNested =
+export type PrimitiveOrNested =
   | boolean
   | string
   | number
@@ -15,7 +15,7 @@ type PrimitiveOrNested =
   | NestedObject
   | NestedArray;
 
-const toKey = (value: PrimitiveOrNested): string => {
+const toKey = <T extends PrimitiveOrNested>(value: T): string => {
   const _type = typeof value;
 
   if (_type == 'string') {
