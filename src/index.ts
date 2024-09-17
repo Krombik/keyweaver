@@ -1,6 +1,8 @@
-type NestedArray = Array<PrimitiveOrNested> | ReadonlyArray<PrimitiveOrNested>;
+export type NestedArray =
+  | Array<PrimitiveOrNested>
+  | ReadonlyArray<PrimitiveOrNested>;
 
-type NestedObject = {
+export type NestedObject = {
   [key: string | number]: PrimitiveOrNested;
 };
 
