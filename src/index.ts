@@ -3,19 +3,19 @@ export type NestedArray =
   | ReadonlyArray<PrimitiveOrNested>;
 
 export type NestedObject = {
-  [key: string | number]: PrimitiveOrNested;
+  [key in string | number]?: PrimitiveOrNested;
 };
 
-export type PrimitiveOrNested =
+export type Primitive =
   | boolean
   | string
   | number
   | undefined
   | null
   | bigint
-  | Date
-  | NestedObject
-  | NestedArray;
+  | Date;
+
+export type PrimitiveOrNested = Primitive | NestedObject | NestedArray;
 
 const toKey = <T extends PrimitiveOrNested>(value: T): string => {
   const _type = typeof value;
