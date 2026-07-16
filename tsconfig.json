@@ -1,25 +1,17 @@
 {
   "compilerOptions": {
-    "outDir": "build",
-    "module": "esnext",
     "target": "es2020",
-    "lib": ["dom", "esnext"],
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "jsx": "react-jsx",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": ["esnext"],
+    "strict": true,
     "declaration": true,
-    "esModuleInterop": true,
-    "noImplicitReturns": false,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
     "stripInternal": true,
     "types": ["node"]
   },
-  "include": ["src", "tsup.config.ts"],
-  "exclude": ["node_modules", "build", "example"]
+  "include": ["src", "tsdown.config.ts"]
 }
